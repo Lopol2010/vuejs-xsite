@@ -1,0 +1,8 @@
+.DS_Store
+*/node_modules/
+dist/
+npm-debug.log*
+client/config
+client/build
+client/static/libs
+client/static/fonts
