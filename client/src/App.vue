@@ -10,7 +10,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import ph from '@/server-service/pornhub-api'
 import config from '@/config'
@@ -22,7 +21,7 @@ export default {
     //Tags should be placed in 'search' value bc its make better response
     OnTagsChanged(){
       //Close opened video
-      this.$children[2].currentID = ''
+      //this.$children[2].currentID = ''
       //Setup default query 
       this.searchQuery = config.defquery
       //Get selected tags
@@ -32,26 +31,21 @@ export default {
         //Concatenate selected tags into one string
         var stringFromTags = ''
         this.searchQuery.search.forEach( (el, i) => {
-          stringFromTags = stringFromTags.concat(el.innerText,i!==this.searchQuery.search.length?'+':'')
+          stringFromTags = stringFromTags.concat(el.innerText,'+')
         });
-        this.searchQuery.search = stringFromTags
-
-        console.log(stringFromTags)
+        //Remove '+' at the end
+        this.searchQuery.search = stringFromTags.replace(/\+$/, '')
+        console.log(this.searchQuery.search)
         //Send query on server
         this.SearchRequest(this.searchQuery)
       }else {
-        this.SearchRequest(config.defquery)
+        this.SearchRequest()
       }
     },
     SearchRequest(query=config.defquery){
       ph.SearchVideos(query).then(x=>{
         this.thumblist = x.data || this.thumblist
       })
-    },
-    CreateQuery(query){
-      var q = config.defquery
-      q.id = query.id
-      return q
     }
   },
   data () {
@@ -66,6 +60,7 @@ export default {
 <style lang=sass>
 #app, .container
   height: 100%
+
 html, body
   height: 100%
   font-size: 16px

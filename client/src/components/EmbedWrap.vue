@@ -1,8 +1,9 @@
 <template>
-  <div class='row justify-content-center video-wrapper' :style='this.pid ? "display: block" : "display: none"'>
+  <div class='row justify-content-center' :class='{hidden: !this.$route.params.id}'>
     <div class='col'>
-      <iframe :src='this.finalURL' frameborder="0" width="608" :height="468" scrolling="no"></iframe>
-
+      <div class='video-wrapper'>
+        <iframe :src='this.pid' frameborder="0" width="608" :height="468" scrolling="no"></iframe>
+      </div>
     </div>
   </div>
 </template>
@@ -12,19 +13,14 @@ export default {
 
     mounted () {
         document.querySelector('.videos-list').appendChild(this.$el)
-        if(this.$route.params.id){
-            this.finalURL = 'https://www.pornhub.com/embed/' + this.$route.params.id
-        }
     },
-    props: ['pid'],
-    watch: {
-        pid (val) {
-            this.finalURL = 'https://www.pornhub.com/embed/' + val
+    computed: {
+        pid () {
+            return 'https://www.pornhub.com/embed/' + this.$route.params.id
         }
     },
     data () {
         return {
-            finalURL: ''
         }
     }
 }
@@ -32,6 +28,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang='sass' scoped>
-
+.hidden
+  display: none
+.video-wrapper
+  background-color: black
+  height: 468px
+  width: 100%
 
 </style>

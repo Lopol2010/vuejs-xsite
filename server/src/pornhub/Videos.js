@@ -64,10 +64,6 @@ function prepareSearchURL(queryData){
 		}
 	}	
 
-	if(typeof queryData.id === 'string'){
-		url += `&id=${queryData.id}`
-	}
-
 	if(typeof queryData.search === 'string'){
 		url += `&search=${queryData.search}`
 	}

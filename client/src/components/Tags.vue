@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import { videosList } from './../config'
+import { tags } from './../config'
 export default {
   data () {
     return {
-      tagsList: videosList.tags,
+      tagsList: tags,
     }
   },
   methods: {

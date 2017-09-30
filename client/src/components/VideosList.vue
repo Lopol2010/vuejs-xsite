@@ -1,11 +1,11 @@
 <template>
   <div class='row justify-content-center'>
     <div class='col-11 videos-list'>
-      <div class="thumbnail" @click='OnClick($event)' v-for='th in thumblist'>
+      <div class="thumbnail" @click='OnClick($event)' v-for='th in pthumblist'>
         <router-link :to='th.video_id' class="thumb-img-link">
           <img :src='th.default_thumb' alt="" class="thumb-img">
           <div class="views-count">
-            {{th.views}}
+            {{th.views|CommaNumber}}
             <i class="fa fa-eye"></i>
             
           </div>
@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <EmbedWrap :pid='currentID'></EmbedWrap>
+    <EmbedWrap></EmbedWrap>
   </div>
 </template>
 
@@ -30,29 +30,17 @@ export default {
       //calctulate position where video iframe should apppear
       var vid = Array.from(document.getElementsByClassName('thumbnail'))
       var id = (4 * Math.ceil((vid.indexOf(e.currentTarget)+1) / 4))-1
-      vid[id].after(document.querySelector('.video-wrapper'))
-
-      //send current video in EmbedWrap's property:src=psource
-      this.currentID = this.pthumblist[vid.indexOf(e.currentTarget)].video_id
+      //vid[id].after(document.querySelector('.video-wrapper'))
+      vid[id].after(this.$children[0].$el)
     }
   },
-  computed: {
-    thumblist: function () {
-      var list = this.pthumblist.slice(0, videosList.videosPerPage)
-      if(list.length>0)
-      list.forEach( (el, i) => {
-        el.views = el.views.replace(/\B(?=(\d{3})+\b)/g, ",")
-        //el.title = el.title.substring(0, videosList.titleLenght-3)
-      });
-      return list
+  filters: {
+    CommaNumber(v){
+      if(!v) return ''
+      return v.replace(/\B(?=(\d{3})+\b)/g, ",")
     }
   },
-  props: ['pthumblist'],
-  data (){
-    return {
-      currentID: ''
-    }
-  }
+  props: ['pthumblist']
 }
 </script>
 
@@ -66,8 +54,7 @@ export default {
     display: inline-block
     width: 240px
     height: 180px
-    margin-left: 10px
-    margin-bottom: 5px
+    margin: 0px 5px 5px
     .thumb-img-link, 
       width: inherit
       height: 135px

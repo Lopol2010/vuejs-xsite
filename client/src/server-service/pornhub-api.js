@@ -12,7 +12,7 @@ export default {
 	},
 
 	GetVideoByID(id){
-		return this.request().post('search', id);
+		return this.request().post('getbyid', id);
 	}
 
 }

@@ -1,14 +1,18 @@
 <template>
     <div class='row'>
       <div class='col header'>
-        <input type='text' class='search-box' placeholder='Search...'>        
+        <input v-model='query' type='text' class='search-box' placeholder='Search...'>        
       </div>
     </div>
 </template>
 
 <script>
 export default {
-
+  data () {
+    return {
+      query: ''
+    }
+  }
 }
 </script>
 
