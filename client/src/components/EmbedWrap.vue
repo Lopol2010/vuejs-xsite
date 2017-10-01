@@ -12,7 +12,7 @@
 export default {
 
     mounted () {
-        document.querySelector('.videos-list').appendChild(this.$el)
+        document.querySelector('.videos-list').appendChild(this.$el)  
     },
     computed: {
         pid () {

@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div class='container'>
-      <router-view name='search'></router-view>
-      <router-view v-on:Changed='OnTagsChanged' name='tags'></router-view>
-      <router-view :pthumblist='thumblist' name='videoslist'></router-view>
+      <router-view ref='searchbox' @SearchRequested='OnSearchRequested' name='search'></router-view>
+      <router-view ref='tags' @Changed='OnTagsChanged' name='tags'></router-view>
+      <router-view :pthumblist='videoList|CropSize' name='videoslist'></router-view>
       <!-- <router-view name='embedwrap'></router-view> -->
       <router-view name='divider'></router-view>
       <router-view name='footer'></router-view>
@@ -15,42 +15,45 @@ import ph from '@/server-service/pornhub-api'
 import config from '@/config'
 export default {
   created () {
-    this.SearchRequest()
+    this.Search()
+
   },
   methods: {
-    //Tags should be placed in 'search' value bc its make better response
+    //When toggled any tag
     OnTagsChanged(){
-      //Close opened video
-      //this.$children[2].currentID = ''
-      //Setup default query 
-      this.searchQuery = config.defquery
+      //Clean search-box
+      this.$refs.searchbox.query = ''
       //Get selected tags
-      this.searchQuery.search = Array.from(document.getElementsByClassName('active-tag'))
-
-      if(this.searchQuery.search.length>0){
-        //Concatenate selected tags into one string
-        var stringFromTags = ''
-        this.searchQuery.search.forEach( (el, i) => {
-          stringFromTags = stringFromTags.concat(el.innerText,'+')
-        });
-        //Remove '+' at the end
-        this.searchQuery.search = stringFromTags.replace(/\+$/, '')
-        console.log(this.searchQuery.search)
-        //Send query on server
-        this.SearchRequest(this.searchQuery)
-      }else {
-        this.SearchRequest()
+      var a = Array.from(document.getElementsByClassName('active-tag'))
+      if(a.length>0){
+        a.forEach( (el, i) => {
+          a[i] = el.innerText
+        })
       }
+      this.searchQuery.search = a.join('+') || null
+      this.Search(this.searchQuery)
     },
-    SearchRequest(query=config.defquery){
+    //When user input something
+    OnSearchRequested(){
+      this.searchQuery.search = this.$refs.searchbox.query.replace(/[^\w\s\d-]/g,'').replace(/[\s]+/g,'+') || null
+      this.$refs.tags.reset()
+      this.Search(this.searchQuery)
+    },
+    Search(query){
+      //Send request to server
       ph.SearchVideos(query).then(x=>{
-        this.thumblist = x.data || this.thumblist
+        this.videoList = x.data || this.videoList
       })
+    }
+  },
+  filters: {
+    CropSize(v){
+      return v.slice(0, config.videolist.length)
     }
   },
   data () {
     return {
-      thumblist: [],
+      videoList: [],
       searchQuery: {}
     }
   }

@@ -53,9 +53,7 @@ function prepareSearchURL(queryData){
 	var url = `${_baseURL}/search?`
 
 	if(typeof queryData.category === 'string'){
-		url += `&categories[]=${queryData.category}`
-	}else if(Array.isArray(queryData.category)){
-		url += `&categories[]=${queryData.category.join(",")}`
+		url += `&category=${queryData.category}`
 	}
 
 	if(typeof queryData.page === 'number'){
@@ -95,7 +93,7 @@ function prepareSearchURL(queryData){
 	if(typeof queryData.thumbsize === 'string'){
 		url += `&thumbsize=${queryData.thumbsize}`
 	}else if(queryData.thumbsize === undefined || queryData.thumbsize === null){
-		url += `&thumbsize=small`
+		url += `&thumbsize=medium_hd`
 	}
 
 	return url.replace(/\?&/, '?')

@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <EmbedWrap></EmbedWrap>
+    <EmbedWrap ref='player'></EmbedWrap>
   </div>
 </template>
 
@@ -30,8 +30,8 @@ export default {
       //calctulate position where video iframe should apppear
       var vid = Array.from(document.getElementsByClassName('thumbnail'))
       var id = (4 * Math.ceil((vid.indexOf(e.currentTarget)+1) / 4))-1
-      //vid[id].after(document.querySelector('.video-wrapper'))
-      vid[id].after(this.$children[0].$el)
+      //Search EmbedWrap and put after clicked thumb
+      vid[id].after(this.$refs.player.$el)
     }
   },
   filters: {

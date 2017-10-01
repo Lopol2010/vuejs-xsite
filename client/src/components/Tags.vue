@@ -20,6 +20,11 @@ export default {
     toggleClass(e, c){
       e.currentTarget.classList.toggle(c)
       this.$emit('Changed')
+    },
+    reset(){
+      Array.from(document.querySelectorAll('.active-tag')).forEach( (el, i) => {
+        el.classList.remove('active-tag')
+      });
     }
   }
 }
