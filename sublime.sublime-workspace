@@ -1,0 +1,672 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wi",
+				"width\t = '' Style CSS"
+			],
+			[
+				"obs",
+				"observePopupAds"
+			],
+			[
+				"setint",
+				"setInterval\t( handler: any, timeout?: long, arguments_..: any ): long Window"
+			],
+			[
+				"setinterva",
+				"description-setInterval\tWindow"
+			],
+			[
+				"chang",
+				"changeInfo"
+			],
+			[
+				"new",
+				"newValue\t: DOMString StorageEvent"
+			],
+			[
+				"class",
+				"className\t: DOMString Element"
+			],
+			[
+				"cla",
+				"className\t: DOMString Element"
+			],
+			[
+				"strea",
+				"streamurl"
+			],
+			[
+				"query",
+				"querySelector\t( selectors: DOMString ): Element (Selectors) Element"
+			],
+			[
+				"video",
+				"videoUrl"
+			],
+			[
+				"stre",
+				"streamurl"
+			],
+			[
+				"cons",
+				"console_log"
+			],
+			[
+				"getele",
+				"getElementsByClassName\t( classNames: DOMString ): HTMLCollection Element"
+			],
+			[
+				"doc",
+				"document\t: Document Window"
+			],
+			[
+				"ta",
+				"text-align"
+			],
+			[
+				"bg",
+				"background-color"
+			],
+			[
+				"fle",
+				"flex-wrap"
+			],
+			[
+				"over",
+				"overflow-wrap"
+			],
+			[
+				"wra",
+				"word-wrap"
+			],
+			[
+				"win",
+				"window"
+			],
+			[
+				"sub",
+				"sublime"
+			],
+			[
+				"us",
+				"userPaths"
+			],
+			[
+				"set",
+				"settings"
+			],
+			[
+				"folder",
+				"folders"
+			],
+			[
+				"path",
+				"paths"
+			],
+			[
+				"pat",
+				"paths"
+			],
+			[
+				"get",
+				"GetPaths"
+			],
+			[
+				"fo",
+				"folders"
+			],
+			[
+				"ge",
+				"GetPaths"
+			],
+			[
+				"Get",
+				"GetPaths"
+			]
+		]
+	},
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 71.0,
+		"last_filter": "stx vue",
+		"selected_items":
+		[
+			[
+				"stx vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"s",
+				"Set Syntax: Sass"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"vue",
+				"VUEFormatter: Set Plugin Options"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inde",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"stx vu",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"dele",
+				"ANF: Delete File"
+			],
+			[
+				"new ",
+				"ANF: New File"
+			],
+			[
+				"new",
+				"ANF: New File"
+			],
+			[
+				"de",
+				"ANF: Delete Current File"
+			],
+			[
+				"new f",
+				"File: New File Relative to Current View"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"ren",
+				"ANF: Rename File"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"prefe",
+				"Preferences: Settings"
+			],
+			[
+				"color",
+				"Color Helper: Show Palettes"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"rena",
+				"ANF: Rename File"
+			],
+			[
+				"LopolTerminal",
+				"LopolTerminal: Open"
+			],
+			[
+				"LopolTerminal: ",
+				"LopolTerminal: Once"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings"
+			],
+			[
+				"win",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"packag",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"pacakge",
+				"Package Control: List Packages"
+			],
+			[
+				"insal",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"open",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"",
+				"Changelog"
+			],
+			[
+				"set sy",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"list",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"renam",
+				"ANF: Rename File"
+			],
+			[
+				"del",
+				"ANF: Delete File"
+			],
+			[
+				"newfi",
+				"File: New File Relative to Current View"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.command_log(True)",
+			"``sublime.command_log(True)``",
+			"``sublime.command_log(True)",
+			"view.run_command('show_overlay')",
+			"show_overlay()",
+			"show_overlay",
+			"window.run_command('win_cmd_root')",
+			"window.run_command('win_cmd_root_folder')",
+			"window.run_command('runcmd')",
+			"window.run_command(\"Runcmd\")",
+			"window.run_command(\"runcmdrootpath\")",
+			"window.run_command(\"RunCmdRootPath\")",
+			"window.run_command('RunCmdRootPath')",
+			"window.run_command('win_terminal_root_folder')",
+			"window.run_command('Win_Terminal_Root_Folder')",
+			"window.run_command('winterminalrootfolder')",
+			"window.run_command('openterminalprojectfolder')",
+			"window.run_command('OpenTerminalProjectFolder')",
+			"window.run_command('lopolterminal')",
+			"window.run_command('lopol_terminal')",
+			"window.run_command('Lopol_terminal')",
+			"window.run_command('Lopol_Terminal')",
+			"window.run_command('LopolTerminalCommand')",
+			"window.run_command('lopolTerminal')",
+			"window.run_command('lopolterminal')",
+			"window.run_command('lopol')",
+			"window.run_command('Lopol')",
+			"window.run_command('loptermroot')",
+			"window.run_command('LopTermRoot')",
+			"window.run_command('winterm')",
+			"window.run_command('WinTerm')",
+			"window.run_command('wintermin')",
+			"window.run_command('winterminal')",
+			"window.run_command('win')",
+			"window.run_command('example')",
+			"window.run_command('Example')",
+			"window.run_command('windowsterminal')",
+			"window.run_command('windowsterminalRoot')",
+			"window.run_command('windowsTerminalRoot')",
+			"window.run_command('windows')",
+			"window.run_command('windowsterminalroot')",
+			"window.run_command('WindowsTerminalRoot')",
+			"window.run_command('test')",
+			"window.run_command('WindowsTerminalRoot')",
+			"window.run_command('WindowsTerminalRootCommand')",
+			"window.run_command('windowsterminalroot')",
+			"window.run_command('WindowsTerminalRoot')",
+			"window.run_command('terminal')",
+			"window.run_command('test')",
+			"window.run_command('example')",
+			"window.run_command('GetFolder')",
+			"window.run_command('getfolder')",
+			"window.run_command('GetFolder')",
+			"view.run_command('example')",
+			"subprocess.Popen(['cmd'], cwd='C:/')",
+			"subprocess.Popen(['cmd', 'cd C:/'])",
+			"subprocess.Popen(['cmd', 'cd C:\\'])",
+			"subprocess.Popen(['cmd', 'cd', 'C:\\\\'])",
+			"subprocess.Popen(['cmd', 'cd', 'C:\\'])",
+			"subprocess.Popen(['cmd', 'cd', 'C:/'])",
+			"subprocess.Popen('cmd', 'cd', 'C:/')",
+			"subprocess.Popen('cmd', 'cd', 'C:\\\\')",
+			"subprocess.Popen('cmd', 'cd', 'C:\\')",
+			"subprocess.Popen('cmd', 'cd ./')",
+			"subprocess.Popen('cmd')",
+			"subprocess.Popen(\"cmd\")",
+			"import subprocess;",
+			"import subprocess; subprocess.Popen(\"cmd\")",
+			"subprocess.Popen",
+			"--help",
+			"h",
+			"-help",
+			"help"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/erizh/Documents/web-apps/vuejs-pornhub/client/src/router/index.js",
+		"/C/Users/erizh/Documents/web-apps/vuejs-pornhub/client/index.html",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Installed Packages/VueFormatter.sublime-package/.vuebeautifyrc",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Installed Packages/VueFormatter.sublime-package/VUEFormatter.sublime-settings",
+		"/C/Users/erizh/Documents/web-apps/vuejs-pornhub/client/node_modules/bootstrap-grid/dist/grid.css",
+		"/C/Users/erizh/Documents/web-apps/vuejs-pornhub/client/package.json",
+		"/C/Users/erizh/Documents/web-apps/vuejs-pornhub/client/bower.json",
+		"/C/Users/erizh/Documents/web-apps/vuejs-pornhub/client/.bowerrc",
+		"/C/Users/erizh/Documents/web-apps/vuejs-pornhub/client/.eslintrc.js",
+		"/C/Users/erizh/Documents/web-apps/vuejs-pornhub/README.md",
+		"/C/Users/erizh/Documents/Browser Extensions/Super Plugin/app/content/observer.js",
+		"/C/Users/erizh/Documents/Browser Extensions/Super Plugin/app/manifest.json",
+		"/C/Users/erizh/Documents/Browser Extensions/Super Plugin/app/style.css",
+		"/C/Users/erizh/Documents/Browser Extensions/Super Plugin/app/popup.html",
+		"/C/Users/erizh/Documents/Browser Extensions/Super Plugin/docs",
+		"/C/Users/erizh/Documents/Browser Extensions/Super Plugin/app/javascript/popup.js",
+		"/C/Users/erizh/Documents/Browser Extensions/Super Plugin/README.md",
+		"/C/Users/erizh/Documents/Browser Extensions/Super Plugin/bower.json",
+		"/C/Users/erizh/Documents/Browser Extensions/Super Plugin/.gitignore",
+		"/C/Users/erizh/Documents/Browser Extensions/Super Plugin/.bowerrc",
+		"/C/Users/erizh/Documents/Browser Extensions/Super Plugin/.bowercc",
+		"/C/Users/erizh/Documents/web-apps/webpack-tests/.gitignore",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/LopolTerminalPackage/LopolTerminal.sublime-settings",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/LopolTerminalPackage/popup.html",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Installed Packages/ColorHelper.sublime-package",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/LopolTerminalPackage/.gitignore",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/LopolTerminalPackage/README.md",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/LopolTerminalPackage/Default (Windows).sublime-keymap",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/LopolTerminalPackage/Lopol.sublime-commands",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/LopolTerminalPackage/Текстовый документ.txt",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/LopolTerminalPackage/LopolTerminal.pyc",
+		"/C/Users/erizh/Documents/web-apps/webpack-tests/src/public/stylesheets/style.sass",
+		"/C/Users/erizh/Documents/web-apps/webpack-tests/dist/server/app.js",
+		"/C/Users/erizh/Documents/web-apps/sublime-tests/webpack.config.js",
+		"/C/Users/erizh/Documents/web-apps/sublime-tests/src/main.js",
+		"/C/Users/erizh/Documents/web-apps/sublime-tests/dist/client/bundle.js",
+		"/C/Users/erizh/Documents/web-apps/sublime-tests/src/main.sass",
+		"/C/Users/erizh/Documents/web-apps/webpack-tests/webpack.config.js",
+		"/C/Users/erizh/Documents/web-apps/webpack-tests/package.json",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.py",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/LopolTerminalPackage/LopolTerminal.py",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/Terminal/Default (Windows).sublime-keymap",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/SyncedSideBar/SyncedSideBar.sublime-settings",
+		"/C/Users/erizh/Documents/web-apps/sublime-tests/index.html",
+		"/C/Users/erizh/Documents/web-apps/sublime-tests/main.css",
+		"/C/Users/erizh/Documents/web-apps/sublime-tests/src",
+		"/C/Users/erizh/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"mani",
+				"app\\manifest.json"
+			],
+			[
+				"main",
+				"app\\manifest.json"
+			],
+			[
+				"cont",
+				"app\\content\\content.js"
+			],
+			[
+				"pop",
+				"app\\popup\\popup.js"
+			],
+			[
+				"syl",
+				"app\\popup\\style.css"
+			],
+			[
+				"man",
+				"app\\manifest.json"
+			],
+			[
+				"p",
+				"app\\popup.html"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"ign",
+				".gitignore"
+			],
+			[
+				"cc",
+				".bowercc"
+			],
+			[
+				"gi",
+				".gitignore"
+			],
+			[
+				"bow",
+				"bower.json"
+			],
+			[
+				"",
+				"Текстовый документ.txt"
+			],
+			[
+				"sass",
+				"src\\public\\stylesheets\\style.sass"
+			],
+			[
+				"app",
+				"dist\\server\\app.js"
+			],
+			[
+				"w",
+				"webpack.config.js"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"mai",
+				"main.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
