@@ -10,7 +10,6 @@ Vue.config.productionTip = false
 
 Vue.component('EmbedWrap', EmbedWrap)
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
